@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+  <form return=false>
+
+    <input type="text" value="<%= req.id %>" id="id" hidden>
+
+    <label>number</label>
+    <input type="text" value="<%= req.number %>" id="number"><br>
+
+    <label>title</label>
+    <input type="text" value="<%= req.title %>" id="title"><br>
+
+    <label>grade</label>
+    <input type="text" value="<%= req.grade %>" id="grade"><br>
+
+    <label>uss</label>
+    <input type="number" value="<%= req.uss %>" id="uss"><br>
+
+    <label>ars</label>
+    <input type="number" value="<%= req.ars %>" id="ars"><br>
+
+    <label>language</label>
+    <input type="text" value="<%= req.language %>" id="language"><br>
+
+    <label>note</label>
+    <input type="text" value="<%= req.note %>" id="note"><br>
+
+    <p>
+      <button id="action" class="button">Update</button>
+    </p>
+
+  </form>
+
+  <a href="/issue/list">back to home</a>
+
+  <script src="/javascripts/add.js"></script>
+
+</body>
+
+</html>

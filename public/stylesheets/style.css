@@ -1,0 +1,76 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.button{
+  padding: 10px 7px;
+  width: 200px;
+  background-color: #dddddd;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+  border-radius: 4px;
+  transition: all 250ms;
+}
+
+.button:hover{
+  background-color: #5555ff;
+}
+
+.issue {
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  display: flex;
+  min-width: 320px;
+}
+
+.issue .card-left {
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.issue .card-left .numero,
+.issue .card-left .graduacion {
+  margin: 2px;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+}
+
+.issue .card-left .numero {
+  align-self: flex-start;
+}
+
+.issue .card-left .graduacion {
+  align-self: flex-end;
+}
+
+.issue .card-right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+
+.issue .card-right .note{
+flex-grow: 1;
+}
+
+button{
+  align-self: flex-end;
+}

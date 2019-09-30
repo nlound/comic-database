@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lists All Issues</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+
+<body>
+  <h1>List of all issues</h1>
+
+  <% issues.forEach(function(data){ %>
+
+  <div class="issue" id="CARD<%= data.id %>">
+
+    <div class="card-left" style="background-image: url('/images/covers/<%= data.cover %>')">
+      <div class="numero">
+        <%= data.number %>
+      </div>
+      <div class="graduacion">
+        <%= data.grade %>
+      </div>
+    </div>
+
+    <div class="card-right">
+      <span>Titulo:</span>
+      <div class="title">
+        <%= data.title %>
+      </div>
+
+      <span>Idioma:</span>
+      <div class="language">
+        <%= data.language %>
+      </div>
+
+      <span>Dolares:</span>
+      <div class="precio-uss">
+        <%= data.uss %>
+      </div>
+
+      <span>precio-uss:</span>
+      <div class="precio-ars">
+        <%= data.ars %>
+      </div>
+
+      <span>Nota:</span>
+      <div class="note">
+        <%= data.note %>
+      </div>
+
+      <button onclick="editIssue(event)" data-id="<%= data.id %>"> Edit </button>
+
+    </div>
+
+  </div>
+
+  <% }) %>
+
+  <p>
+    You can see a list of actions <a href="/issue">here</a>.
+  </p>
+
+  <script src="/javascripts/edit.js"></script>
+
+</body>
+
+</html>
